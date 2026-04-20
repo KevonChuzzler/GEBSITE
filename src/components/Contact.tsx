@@ -17,42 +17,21 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setError(null);
-
-    try {
-      const response = await fetch("https://formspree.io/f/mpqklowg", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify({
-          name: `${formData.firstName} ${formData.lastName}`,
-          email: formData.email,
-          message: formData.message
-        })
-      });
-
-      if (response.ok) {
-        setIsSuccess(true);
-        setFormData({ firstName: '', lastName: '', email: '', message: '' });
-        setTimeout(() => setIsSuccess(false), 5000);
-      } else {
-        const data = await response.json();
-        if (Object.hasOwn(data, 'errors')) {
-          setError(data["errors"].map((error: any) => error["message"]).join(", "));
-        } else {
-          setError("Oops! There was a problem submitting your form");
-        }
-      }
-    } catch (err) {
-      setError("Oops! There was a problem submitting your form");
-    } finally {
-      setIsSubmitting(false);
-    }
+    
+    const subject = encodeURIComponent(`Contact from ${formData.firstName} ${formData.lastName}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.firstName} ${formData.lastName}\n` +
+      `Email: ${formData.email}\n\n` +
+      `Message:\n${formData.message}`
+    );
+    
+    window.location.href = `mailto:info@gebegroup.co.za?subject=${subject}&body=${body}`;
+    
+    setIsSuccess(true);
+    setFormData({ firstName: '', lastName: '', email: '', message: '' });
+    setTimeout(() => setIsSuccess(false), 5000);
   };
 
   return (

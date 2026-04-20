@@ -4,6 +4,7 @@ import {
   Hero, 
   Stats, 
   About, 
+  Founder,
   Services, 
   Innovation, 
   Contact, 
@@ -18,6 +19,7 @@ export default function App() {
         <Hero />
         <Stats />
         <About />
+        <Founder />
         <Services />
         <Innovation />
         <Contact />
