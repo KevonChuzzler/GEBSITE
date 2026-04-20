@@ -6,9 +6,9 @@
   --font-display: "Outfit", sans-serif;
   
   --color-gebe-green: #1a5d2b;
-  --color-gebe-green-light: #2d8a41;
+  --color-gebe-green-light: #4ade80;
   --color-gebe-gold: #d4af37;
-  --color-gebe-gold-light: #f1c40f;
+  --color-gebe-gold-light: #fef08a;
 }
 
 @layer base {

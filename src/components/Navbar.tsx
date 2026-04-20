@@ -21,17 +21,18 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed left-0 right-0 z-50 transition-all duration-500 ease-in-out flex justify-center ${scrolled ? "top-4" : "top-0"}`}>
-      <div className={`transition-all duration-500 ease-in-out bg-gebe-green ${scrolled ? "w-[95%] max-w-7xl rounded-full shadow-2xl px-8 py-3" : "w-full rounded-none px-4 sm:px-6 lg:px-8 py-6 shadow-lg"}`}>
+      <div className={`transition-all duration-500 ease-in-out bg-gradient-to-r from-gebe-green to-gebe-green-light ${scrolled ? "w-[95%] max-w-7xl rounded-full shadow-2xl shadow-gebe-green/20 px-8 py-3" : "w-full rounded-none px-4 sm:px-6 lg:px-8 py-6 shadow-lg shadow-slate-900/10"}`}>
         <div className="flex justify-between items-center">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-2"
+            className="flex items-center gap-3 cursor-pointer"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <div className={`w-10 h-10 rounded-lg flex items-center justify-center shadow-lg transition-all duration-500 ${scrolled ? "bg-white text-gebe-green" : "bg-white/10 text-white border border-white/20"}`}>
-              <span className="font-bold text-xl">G</span>
+            <div className={`transition-all duration-500 rounded-xl overflow-hidden shadow-lg ${scrolled ? "w-10 h-10" : "w-12 h-12"}`}>
+              <img src="/logo.jpg" alt="Gebe Group Logo" className="w-full h-full object-cover" />
             </div>
-            <span className="text-2xl font-display font-bold tracking-tight text-white">GEBE GROUP</span>
+            <span className="text-2xl font-display font-bold tracking-tight text-white hidden sm:block">GEBE GROUP</span>
           </motion.div>
 
           {/* Desktop Nav */}
@@ -73,7 +74,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="absolute top-full left-0 right-0 mt-2 mx-4 md:hidden overflow-hidden rounded-3xl shadow-2xl bg-gebe-green border border-white/10"
+            className="absolute top-full left-0 right-0 mt-2 mx-4 md:hidden overflow-hidden rounded-3xl shadow-2xl bg-gradient-to-b from-gebe-green to-gebe-green-light border border-white/10"
           >
             <div className="px-6 py-8 space-y-6">
               {navLinks.map((link) => (

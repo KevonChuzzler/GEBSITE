@@ -23,7 +23,7 @@ const Contact = () => {
     setError(null);
 
     try {
-      const response = await fetch("https://formspree.io/f/info@gebegroup.co.za", {
+      const response = await fetch("https://formspree.io/f/mpqklowg", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -153,7 +153,7 @@ const Contact = () => {
                 <button 
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 bg-gebe-green text-white rounded-xl font-bold hover:bg-gebe-green-light transition-all shadow-xl shadow-gebe-green/20 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-4 bg-gradient-to-r from-gebe-green to-gebe-green-light text-white rounded-xl font-bold hover:shadow-xl hover:shadow-gebe-green/30 transition-all shadow-lg shadow-gebe-green/20 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? "Processing..." : "Send Message"}
                 </button>

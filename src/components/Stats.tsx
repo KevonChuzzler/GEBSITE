@@ -11,10 +11,10 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-16 bg-gebe-green relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-gebe-green to-gebe-green-light relative overflow-hidden">
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl -ml-32 -mt-32" />
-        <div className="absolute bottom-0 right-0 w-64 h-64 bg-gebe-gold rounded-full blur-3xl -mr-32 -mb-32" />
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-to-br from-gebe-gold to-gebe-gold-light rounded-full blur-3xl -mr-32 -mb-32" />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">

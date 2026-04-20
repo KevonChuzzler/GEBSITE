@@ -39,7 +39,7 @@ const Hero = () => {
               Gebe Group is a multidisciplinary, black female-owned company delivering expert financial advisory and specialised mining services that drive safe, efficient operations.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="#services" className="px-8 py-4 bg-gebe-green text-white rounded-xl font-bold hover:bg-gebe-green-light transition-all shadow-xl shadow-gebe-green/20 flex items-center gap-2">
+              <a href="#services" className="px-8 py-4 bg-gradient-to-r from-gebe-green to-gebe-green-light text-white rounded-xl font-bold hover:shadow-xl hover:shadow-gebe-green/30 transition-all shadow-lg shadow-gebe-green/20 flex items-center gap-2">
                 Our Services <ChevronRight className="w-5 h-5" />
               </a>
               <a href="#about" className="px-8 py-4 bg-white/10 text-white border border-white/20 backdrop-blur-md rounded-xl font-bold hover:bg-white/20 transition-all">

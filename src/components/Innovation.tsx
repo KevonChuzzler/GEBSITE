@@ -74,7 +74,7 @@ const Innovation = () => {
                   "We integrate advanced technologies to improve efficiency, enhance performance and optimize resources across industries."
                 </p>
                 <div className="flex items-center gap-6 p-6 bg-white/15 rounded-3xl border border-white/20 backdrop-blur-sm">
-                  <div className="w-16 h-16 rounded-2xl bg-gebe-green flex items-center justify-center text-white shadow-lg shadow-gebe-green/20">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-gebe-green to-gebe-green-light flex items-center justify-center text-white shadow-lg shadow-gebe-green/20">
                     <TrendingUp className="w-8 h-8" />
                   </div>
                   <div>

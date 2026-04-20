@@ -65,7 +65,7 @@ const Services = () => {
                   <p className="text-slate-200 text-sm leading-relaxed mb-4">
                     {service.description}
                   </p>
-                  <div className="w-12 h-1 bg-gebe-gold rounded-full" />
+                  <div className="w-12 h-1 bg-gradient-to-r from-gebe-gold to-gebe-gold-light rounded-full" />
                 </div>
               </div>
             </motion.div>
