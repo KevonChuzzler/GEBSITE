@@ -44,7 +44,7 @@ const Founder = () => {
               <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                 <img 
                   src={founderImg} 
-                  alt="Our Founder - GEBE Group" 
+                  alt="Nosipho Nyathikazi - Founder of GEBE Group" 
                   className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" 
                 />
               </div>
@@ -99,7 +99,7 @@ const Founder = () => {
                 Meet Our Founder & Specialist
               </h3>
               <p className="text-lg text-slate-600 mb-12 leading-relaxed">
-                With a decade of experience in cross-functional projects, our founder leads GEBE Group with a vision for sustainable mining and financial excellence. This data-driven approach ensures precision in every partnership.
+                With a decade of experience in cross-functional projects, Nosipho leads GEBE Group with a vision for sustainable mining and financial excellence. Her data-driven approach ensures precision in every partnership.
               </p>
             </motion.div>
 
