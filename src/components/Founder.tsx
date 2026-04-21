@@ -46,6 +46,7 @@ const Founder = () => {
                   src={founderImg} 
                   alt="Nosipho Nyathikazi - Founder of Gebe Group" 
                   className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" 
+                  style={{ objectPosition: '50% 80%' }}
                   loading="lazy"
                   decoding="async"
                 />
