@@ -7,7 +7,7 @@ const Stats = () => {
     { label: "Black Women Owned", value: "100%", icon: UserRound },
     { label: "Youth Owned", value: "100%", icon: Users2 },
     { label: "Market Value", value: "Premium", icon: Gem },
-    { label: "Experience", value: "15+ Yrs", icon: History },
+    { label: "Experience", value: "10+ Years", icon: History },
   ];
 
   return (

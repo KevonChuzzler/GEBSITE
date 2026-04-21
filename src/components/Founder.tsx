@@ -18,7 +18,7 @@ const Founder = () => {
     {
       icon: <CheckCircle2 className="w-6 h-6" />,
       title: "Data-Driven Decisions",
-      desc: "Utilizing advanced analytics to drive strategic business outcomes and efficiency."
+      desc: "Highly experienced in utilising advanced analytics to drive strategic business outcomes and efficiency."
     },
     {
       icon: <Users className="w-6 h-6" />,
@@ -44,8 +44,10 @@ const Founder = () => {
               <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                 <img 
                   src={founderImg} 
-                  alt="Nosipho Nyathikazi - Founder of GEBE Group" 
+                  alt="Nosipho Nyathikazi - Founder of Gebe Group" 
                   className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" 
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               
@@ -99,7 +101,7 @@ const Founder = () => {
                 Meet Our Founder & Specialist
               </h3>
               <p className="text-lg text-slate-600 mb-12 leading-relaxed">
-                With a decade of experience in cross-functional projects, Nosipho leads GEBE Group with a vision for sustainable mining and financial excellence. Her data-driven approach ensures precision in every partnership.
+                With a decade of experience in cross-functional projects, Nosipho leads Gebe Group with a vision for sustainable mining and financial excellence. Her data-driven approach ensures precision in every partnership.
               </p>
             </motion.div>
 

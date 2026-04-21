@@ -24,6 +24,8 @@ const About = () => {
                 src={truckImg} 
                 alt="Mining Operations" 
                 className="rounded-[40px] shadow-2xl mt-12 border-8 border-slate-50 w-full h-[400px] object-cover" 
+                loading="lazy"
+                decoding="async"
                 referrerPolicy="no-referrer"
               />
               <motion.img 
@@ -33,6 +35,8 @@ const About = () => {
                 src={heroBgImg} 
                 alt="Mining Services" 
                 className="rounded-[40px] shadow-2xl border-8 border-slate-50 w-full h-[400px] object-cover" 
+                loading="lazy"
+                decoding="async"
                 referrerPolicy="no-referrer"
               />
             </div>

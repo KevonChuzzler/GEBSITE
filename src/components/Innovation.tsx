@@ -61,6 +61,8 @@ const Innovation = () => {
                 backgroundPosition: 'center'
               }}
             >
+              {/* Lazy preload trigger */}
+              <img src={dataImg} alt="" className="hidden" loading="lazy" decoding="async" />
               <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-[1px]" />
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32 blur-2xl" />
               <div className="relative z-10">
@@ -71,7 +73,7 @@ const Innovation = () => {
                   <span className="text-white font-bold tracking-[0.2em] uppercase text-xs">Innovation Hub</span>
                 </div>
                 <p className="text-3xl text-white font-display font-medium leading-snug mb-12">
-                  "We integrate advanced technologies to improve efficiency, enhance performance and optimize resources across industries."
+                  "We integrate advanced technologies to improve efficiency, enhance performance and optimise resources across industries."
                 </p>
                 <div className="flex items-center gap-6 p-6 bg-white/15 rounded-3xl border border-white/20 backdrop-blur-sm">
                   <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-gebe-green to-gebe-green-light flex items-center justify-center text-white shadow-lg shadow-gebe-green/20">

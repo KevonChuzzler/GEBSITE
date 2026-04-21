@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className={`transition-all duration-500 rounded-xl overflow-hidden shadow-lg ${scrolled ? "w-10 h-10" : "w-12 h-12"}`}>
               <img src="/logo.jpg" alt="Gebe Group Logo" className="w-full h-full object-cover" />
             </div>
-            <span className="text-2xl font-display font-bold tracking-tight text-white hidden sm:block">GEBE GROUP</span>
+            <span className="text-2xl font-display font-bold tracking-tight text-white hidden sm:block">Gebe Group</span>
           </motion.div>
 
           {/* Desktop Nav */}

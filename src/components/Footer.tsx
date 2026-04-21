@@ -9,11 +9,11 @@ const Footer = () => {
             <div className="w-10 h-10 rounded-lg overflow-hidden shadow-lg shadow-black/20">
               <img src="/logo.jpg" alt="Gebe Group Logo" className="w-full h-full object-cover" />
             </div>
-            <span className="text-xl font-display font-bold text-white tracking-tight">GEBE GROUP</span>
+            <span className="text-xl font-display font-bold text-white tracking-tight">Gebe Group</span>
           </div>
           
           <div className="text-slate-500 text-sm text-center md:text-right">
-            <p>&copy; {new Date().getFullYear()} GEBE GROUP. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Gebe Group. All rights reserved.</p>
             <p className="mt-1">
               Built by <a href="https://www.facebook.com/kevonsphotography" target="_blank" rel="noopener noreferrer" className="text-gebe-gold font-semibold hover:text-gebe-gold-light transition-colors">KS Digital Solutionz</a>
             </p>

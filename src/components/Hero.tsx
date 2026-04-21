@@ -19,6 +19,9 @@ const Hero = () => {
         <div className="absolute inset-0 bg-slate-900/40 backdrop-blur-[1px]" />
       </div>
       
+      {/* LCP Optimization: Preload background image */}
+      <img src={conveyorImg} alt="" className="hidden" loading="eager" fetchPriority="high" />
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="max-w-3xl">
           <motion.div
@@ -36,7 +39,7 @@ const Hero = () => {
               Empowering <span className="text-gebe-green">Mining</span> & <span className="text-gebe-gold">Financial</span> Excellence
             </h1>
             <p className="text-xl text-slate-200 mb-10 leading-relaxed font-medium">
-              Gebe Group is a multidisciplinary, black female-owned company delivering expert financial advisory and specialised mining services that drive safe, efficient operations.
+              Gebe Group is a multidisciplinary, black female-owned company delivering expert financial advisory and specialised mining services that drive safe and efficient operations.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#services" className="px-8 py-4 bg-gradient-to-r from-gebe-green to-gebe-green-light text-white rounded-xl font-bold hover:shadow-xl hover:shadow-gebe-green/30 transition-all shadow-lg shadow-gebe-green/20 flex items-center gap-2">
